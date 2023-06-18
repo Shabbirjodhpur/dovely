@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /dovely_v1.zip/
+
+Noindex: /dovely_v1.zip/
+
+Sitemap: https://dovely.org/sitemap.xml
