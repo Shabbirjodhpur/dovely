@@ -1289,4 +1289,53 @@ document.getElementById('ntnews-dovely').addEventListener("click",()=>window.loc
 
 document.getElementById('bbcnews-dovely').addEventListener("click",()=>window.location.href="https://youtu.be/QPBLVIDC1YM");
 
-document.getElementById('urdu-dovely').addEventListener("click",()=>window.location.href=window.location.href + "/urdu-dovely-full-paper.jpeg");</script></body></html>
+document.getElementById('urdu-dovely').addEventListener("click",()=>window.location.href=window.location.href + "/urdu-dovely-full-paper.jpeg");
+</script>
+<script>
+const validateEmail = (email) => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
+function infoIsNotValid(){
+	let name = document.getElementById('mce-FNAME').value
+	let email = document.getElementById('mce-EMAIL').value
+	let locality = document.getElementById('mce-MMERGE5').value
+	if(name==''){
+		alert('name can not be empty')
+		return true;
+	}
+	if(email==''){
+		alert('email can not be empty')
+		return true;
+	}
+	if(locality==''){
+		alert('phone number can not be empty')
+		return true;
+	}
+	if(!validateEmail(email)){
+		alert('email is invalid')
+		return true;
+	}
+	return false;
+}
+document.getElementById('mc-embedded-subscribe').addEventListener('click',()=>{
+	if(infoIsNotValid()) return;
+	yaaro_email_bhejo();
+})
+
+function yaaro_email_bhejo(){
+	const server_url = 'https://dovely-e-server.vercel.app/save';
+	let email = document.getElementById('mce-EMAIL').value;
+	let name = document.getElementById('mce-FNAME').value;
+	fetch(`${server_url}?name=${encodeURIComponent(name)}&em=${encodeURIComponent(email)}`, {
+  		method: "GET",
+	}).then(e=>{
+		
+       }).catch(e=>console.log(e))
+}
+</script>
+</body>
+</html>
