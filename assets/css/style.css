@@ -752,7 +752,11 @@ section {
   background-size: contain;
   min-height: 300px;
 }
-
+.video-box1{
+    background: url(../img/hero-img.png) center center no-repeat;
+    background-size: contain;
+    min-height: 300px;
+}
 .about .play-btn {
   width: 94px;
   height: 94px;
