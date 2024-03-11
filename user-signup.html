@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Signups</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="w-[100vw] flex justify-center">
+            <img src="./image (2) (1).png" class="p-[20px] w-[250px] md:w-[400px] lg:w-[600px]">
+        </div>
+        <!-- <div class="flex justify-center">
+            <img src="./1111111.jpg" class="w-[100vw] md:w-[80vw] lg:w-[70vw] h-[50vh] md:h-[70vh] lg:h-[70vh]" style="border-bottom-left-radius: 24px;border-bottom-right-radius: 24px;">
+        </div> -->
+        <div style="font-family: Montserrat,cursive;"
+            class="text-[20px] md:text-[42px] lg:text-[42px] text-center font-bold pt-[16px] lg:pt-[52px] pb-[12px] uppercase">
+            <h1 class="mb-[-6px] font-[800]">the wait is over
+            </h1>
+            <p class="italic mb-[28px]"> application launching soon </p>
+        </div>
+    </section>
+    <section>
+        <div
+            class="absolute w-[100vw] z-[-1] text-[#B8B8B826] text-[100px] md:text-[200px] lg:text-[300px] overflow-y-hidden overflow-x-hidden">
+            <!-- B8B8B826 -->
+            <div
+                class="rotate-[-7deg] md:rotate-[-17deg] lg:rotate-[-17deg] md:pt-[100px] lg:pt-[100px] font-[Montserrat] font-bold">
+                <h1>DOVELY.ORG</h1>
+                <h1>DOVELY.ORG</h1>
+                <h1>DOVELY.ORG</h1>
+
+                <h1 class="block md:hidden lg:hidden">DOVELY.ORG</h1>
+                <h1 class="block md:hidden lg:hidden">DOVELY.ORG</h1>
+                <h1 class="block md:hidden lg:hidden">DOVELY.ORG</h1>
+            </div>
+
+        </div>
+        <div class="p-[24px] flex flex-col items-center justify-center" style="font-family: Montserrat,cursive;font-weight: 500;">
+            <div class="">
+                <!-- <h2>Name</h2> -->
+                <div class="relative w-[240px] md:w-[360px] lg:w-[480px]">
+                    <!-- <input type="text" class="p-[12px] border-[1px] h-[36px] w-[100%] border-[rgba(0,0,0,0.8)] rounded-[24px]" placeholder="Name"> -->
+                <button class="bg-[#4EB425] text-white py-[12px] w-[100%] font-bold rounded-[24px]" onclick="save()">SIGN UP</button>
+                    <img src="./freepik--Character--inject-11.png" class="absolute w-[82px] right-0 top-[-70px]"/>
+                </div>
+            </div>
+            <!-- <div class="mt-[20px]">
+                <h2>Email</h2>
+                <div class="relative w-[240px] md:w-[360px] lg:w-[480px]">
+                    <input type="text" class="p-[12px] border-[1px] h-[36px] w-[100%] border-[rgba(0,0,0,0.8)] rounded-[24px]" placeholder="example@gmail.com">
+                </div>
+            </div> -->
+            <!-- <div class="w-[240px] md:w-[360px] lg:w-[480px] flex justify-center mt-[36px]">
+                <button class="bg-[#4EB425] text-white py-[12px] w-[80%] font-bold rounded-[24px]" onclick="save">SIGN UP</button>
+            </div> -->
+        </div>
+        <!-- <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 mt-[24px]">
+            <a class="ml-[10px] md:ml-[0px] lg:ml-[0px] flex justify-center md:justify-end lg:justify-end cursor-pointer"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdKkVBTFFHdJrHTmSX-DprsGEYqdSZHvpmWmEC78jBIcOQ1QQ/viewform">
+                <img src="./Group 19.png"
+                    class="mt-[30px] w-[240px] md:w-[460px] lg:w-[460px] h-[120px] md:h-[240px] lg:h-[240px]" />
+            </a>
+            <img src="./Group 20.png" class="w-[460px]" />
+        </div> -->
+
+        <!-- <div class="flex justify-center">
+            <img src="./Group 15.png"
+                class="w-[80vw] md:w-[80vw] lg:w-[750px] pt-[60px] pb-[60px] lg:pt-[120px] lg:pb-[120px]">
+        </div> -->
+
+        <div class="pt-[50px] md:pt-[0px] lg:pt-[0px]">
+            <div class="p-[10px] md:p-[48px] lg:p-[48px] uppercase" style="font-family: Montserrat,cursive;">
+                <div class="flex items-center">
+                    <h1 class="text-[24px] pr-[12px]">Join us</h1>
+                    <img src="./Line 1.png" alt="" class="h-[2px]">
+                </div>
+                <div>
+                    <h1 class="text-[24px] md:text-[48px] lg:text-[48px] font-bold">Join the Dovely Movement</h1>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3">
+                <div class="p-[0px] pb-[24px] md:p-[48px] lg:p-[48px]">
+                    <div class="flex justify-center">
+                        <img src="./Group 32.png" class="h-[75px] md:h-[120px] lg:h-[120px]" />
+                    </div>
+                    <h1 class="text-[16px] md:text-[34px] lg:text-[34px] text-center mt-[24px] mb-[12px]">Safer</h1>
+                    <div class="flex justify-center">
+                        <p class="text-[12px] md:text-[16px] lg:text-[16px] w-[200px] text-center">We bring you two wheeler commute platform just for women,
+    driven by women rides only.</p>
+                    </div>
+                </div>
+                <div class="p-[0px] pb-[24px] md:p-[48px] lg:p-[48px]">
+                    <div class="flex justify-center">
+                        <img src="./Group 33.png" class="h-[75px] md:h-[120px] lg:h-[120px]" />
+                    </div>
+                    <h1 class="text-[16px] md:text-[34px] lg:text-[34px] text-center mt-[24px] mb-[12px]">For Women Only</h1>
+                    <div class="flex justify-center">
+                        <p class="text-[12px] md:text-[16px] lg:text-[16px] w-[200px] text-center">We aim to make your journey safe, fast and comfortable. Trust our experienced women
+                            riders to beat the traffic
+                            and take you to your 
+                            destination. </p>
+                    </div>
+                </div>
+                <div class="p-[0px] pb-[24px] md:p-[48px] lg:p-[48px]">
+                    <div class="flex justify-center">
+                        <img src="./Group 34.png" class="h-[75px] md:h-[120px] lg:h-[120px]" />
+                    </div>
+                    <h1 class="text-[16px] md:text-[34px] lg:text-[34px] text-center mt-[24px] mb-[12px]">Affordable </h1>
+                    <div class="flex justify-center">
+                        <p class="text-[12px] md:text-[16px] lg:text-[16px] w-[200px] text-center">Dovely.org provides women with affordable rides. Tired of spiking auto and cab fares?
+                            Try Dovely.org  </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center pt-[40px]">
+                <div class="h-[2px] w-[80vw] bg-black"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pt-[48px] pb-[72px] flex flex-col mx-[24px]">
+            <div>
+                <p class="text-center"><i>Increasing Women Employment Rate All over india
+                        through mobility</i></p>
+            </div>
+            <div class="flex justify-center mt-[24px]">
+                <img class="w-[20px] mr-[12px]" src="Social Icons.png" />
+                <img class="w-[20px] mr-[12px]" src="Social Icons (1).png" />
+                <img class="w-[20px] mr-[12px]" src="Social Icons (2).png" />
+                <img class="w-[20px] mr-[12px]" src="Social Icons (3).png" />
+            </div>
+            <div class="mt-[24px]">
+                <p class="text-center">
+                    © Copyright Dovely. All Rights Reserved<br>
+                    Designed by <a class="text-[#4EB425]" href="https://dovely.org">Dovely</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function save(){
+            window.location.replace("https://www.google.com")
+        }
+    </script>
+</body>
+
+</html>
